@@ -3,4 +3,42 @@
 .App {
   text-align: center;
 }
+
+.btns-container{
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+  gap: .5em;
+}
   
+.button{
+  position: relative;
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background: grey;
+  color: black;
+}
+
+.button:hover{
+  background: darkgray;
+}
+
+.btn-text{
+  text-align: center;
+}
+
+#clear{
+  width: 100px;
+}
+
+#zero{
+  width: 100px;
+}
+
+#equal{
+  position: absolute;
+  margin-top: -50px;
+  height: 100px;
+}

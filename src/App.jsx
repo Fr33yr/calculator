@@ -5,32 +5,16 @@ import './styles/main.css';
 
 const calcBtns = [
   {
-    id: "zero",
-    text: "0"
+    id: "clear",
+    text: "AC"
   },
   {
-    id: "one",
-    text: "1"
+    id: "divide",
+    text: "/"
   },
   {
-    id: "two",
-    text: "2"
-  },
-  {
-    id: "three",
-    text: "3"
-  },
-  {
-    id: "four",
-    text: "4"
-  },
-  {
-    id: "five",
-    text: "5"
-  },
-  {
-    id: "six",
-    text: "6"
+    id: "multipy",
+    text: "*"
   },
   {
     id: "seven",
@@ -45,28 +29,48 @@ const calcBtns = [
     text: "9"
   },
   {
-    id: "decimal",
-    text: "."
+    id: "subtract",
+    text: "-"
+  },
+  {
+    id: "four",
+    text: "4"
+  },
+  {
+    id: "five",
+    text: "5"
+  },
+  {
+    id: "six",
+    text: "6"
   },
   {
     id: "add",
     text: "+"
   },
   {
-    id: "subtract",
-    text: "-"
+    id: "one",
+    text: "1"
   },
   {
-    id: "multiply",
-    text: "*"
+    id: "two",
+    text: "2"
   },
   {
-    id: "divide",
-    text: "/"
+    id: "three",
+    text: "3"
   },
   {
-    id: "clear",
-    text: "AC"
+    id: "zero",
+    text: "0"
+  },
+  {
+    id: "decimal",
+    text: "."
+  },
+  {
+    id: "equal",
+    text: "="
   }
 ]
 
@@ -92,9 +96,9 @@ export function Buttons({btn}){
 
   return(
     <Fragment>
-        <div className="button" id={btn.id}>
-          <p>{btn.text}</p>
-        </div>
+        <button className="button" id={btn.id}>
+          {btn.text}
+        </button>
     </Fragment>
   );
 }
