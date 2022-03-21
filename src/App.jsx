@@ -79,7 +79,10 @@ function App() {
     
     <Fragment>
       <div id="calculator">
-        <div className="display"></div>
+        <div className="display">
+          <div className="formula-screen">12345</div>
+          <div className="output-screen">12345</div>
+        </div>
         <div className="btns-container">
           {calcBtns.map((btn) => (
             <Buttons btn={btn} key={btn.id} id={btn.id} />
