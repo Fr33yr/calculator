@@ -7,12 +7,12 @@
 #calculator{
   background: black;
   margin: 20vh auto 0 auto;
-  width: 200px;
+  width: 240px;
   padding: 6px;
 }
 
 .display{
-  width: 200px;
+  width: 240px;
   height: 80px;
 }
 
@@ -32,14 +32,14 @@
 
 .btns-container{
   background: black;
-  width: 200px;
+  width: 240px;
   display: block;
 }
   
 .button{
   position: relative;
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   border: 1px solid black;
   background: rgb(85, 85, 85);
   color: lightgoldenrodyellow;
@@ -56,7 +56,7 @@
 
 #clear{
   background: rgb(245, 72, 72);
-  width: 100px;
+  width: 120px;
 }
 
 #clear:hover{
@@ -64,14 +64,14 @@
 }
 
 #zero{
-  width: 100px;
+  width: 120px;
 }
 
 #equal{
   background: rgb(68, 68, 252);
   position: absolute;
-  margin-top: -50px;
-  height: 100px;
+  margin-top: -60px;
+  height: 120px;
 }
 
 #equal:hover{
