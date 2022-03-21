@@ -78,13 +78,14 @@ function App() {
   return (
     
     <Fragment>
-      <h1>Calculator</h1>
-      <div className="display"></div>
-      <div className="btns-container">
-        {calcBtns.map((btn) => (
-          <Buttons btn={btn} key={btn.id} id={btn.id} />
-        ))}
-      </div>
+      <div id="calculator">
+        <div className="display"></div>
+        <div className="btns-container">
+          {calcBtns.map((btn) => (
+            <Buttons btn={btn} key={btn.id} id={btn.id} />
+          ))}
+        </div>
+      </div> 
     </Fragment>
   );
 }

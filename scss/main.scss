@@ -4,11 +4,22 @@
   text-align: center;
 }
 
-.btns-container{
+#calculator{
+  background: black;
+  margin: 20vh auto 0 auto;
   width: 200px;
-  margin: 0 auto;
+  padding: 6px;
+}
+
+.display{
+  width: 200px;
+  height: 80px;
+}
+
+.btns-container{
+  background: black;
+  width: 200px;
   display: block;
-  gap: .5em;
 }
   
 .button{
@@ -16,13 +27,13 @@
   height: 50px;
   width: 50px;
   border: 1px solid black;
-  border-radius: 3px;
-  background: grey;
-  color: black;
+  background: rgb(85, 85, 85);
+  color: lightgoldenrodyellow;
 }
 
 .button:hover{
-  background: darkgray;
+  background: gray;
+  color: black;
 }
 
 .btn-text{
@@ -30,7 +41,12 @@
 }
 
 #clear{
+  background: rgb(245, 72, 72);
   width: 100px;
+}
+
+#clear:hover{
+  background: rgb(255, 27, 27);
 }
 
 #zero{
@@ -38,7 +54,12 @@
 }
 
 #equal{
+  background: rgb(68, 68, 252);
   position: absolute;
   margin-top: -50px;
   height: 100px;
+}
+
+#equal:hover{
+  background: rgb(38, 38, 248);
 }

@@ -4,6 +4,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #141125;
 }
 
 code {
@@ -14,11 +15,22 @@ code {
   text-align: center;
 }
 
-.btns-container {
+#calculator {
+  background: black;
+  margin: 20vh auto 0 auto;
   width: 200px;
-  margin: 0 auto;
+  padding: 6px;
+}
+
+.display {
+  width: 200px;
+  height: 80px;
+}
+
+.btns-container {
+  background: black;
+  width: 200px;
   display: block;
-  gap: 0.5em;
 }
 
 .button {
@@ -26,13 +38,13 @@ code {
   height: 50px;
   width: 50px;
   border: 1px solid black;
-  border-radius: 3px;
-  background: grey;
-  color: black;
+  background: #555555;
+  color: lightgoldenrodyellow;
 }
 
 .button:hover {
-  background: darkgray;
+  background: gray;
+  color: black;
 }
 
 .btn-text {
@@ -40,7 +52,12 @@ code {
 }
 
 #clear {
+  background: #f54848;
   width: 100px;
+}
+
+#clear:hover {
+  background: #ff1b1b;
 }
 
 #zero {
@@ -48,7 +65,12 @@ code {
 }
 
 #equal {
+  background: #4444fc;
   position: absolute;
   margin-top: -50px;
   height: 100px;
+}
+
+#equal:hover {
+  background: #2626f8;
 }/*# sourceMappingURL=main.css.map */
