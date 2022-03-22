@@ -1,6 +1,51 @@
 @import './config';
 
-.App {
-  text-align: center;
+
+#frame{
+  max-width: 220px;
+  margin: 10vh auto 0 auto;
+  background: black;
 }
 
+.display{
+  display: flex;
+  flex-direction: column;
+  .history{
+    border: none;
+    background-color: black;
+    text-align: right;
+    height: 21px;
+    font-size: 18px;
+    color: wheat;
+  }
+  .current-calc{
+    border: none;
+    background: black;
+    text-align: right;
+    height: 42px;
+    font-size: 30px;
+    color: wheat;
+  }
+}
+
+.buttons{
+  margin: 0 auto;
+  padding: .5em 0 .5em 0;
+  max-width: 200px;
+  display: block;
+}
+
+button{
+  height: 50px;
+  width: 50px;
+}
+
+.span-two{
+  height: 50px;
+  width: 100px;
+}
+
+.span-vertical{
+  width: 50px;
+  height: 100px;
+}
