@@ -8,7 +8,7 @@ export default function App(){
     <Fragment>
       <div id="frame">
         <div className="display">
-          <input type="text" className="history" placeholder="1234"/>
+          <div className="history">1234</div>
           <input type="text" className="current-calc" />
         </div>
         <div className="buttons">
