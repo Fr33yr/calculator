@@ -2,107 +2,15 @@ import React,{ Fragment } from 'react';
 import './styles/main.css';
 
 
-
-const calcBtns = [
-  {
-    id: "clear",
-    text: "AC"
-  },
-  {
-    id: "divide",
-    text: "/"
-  },
-  {
-    id: "multipy",
-    text: "*"
-  },
-  {
-    id: "seven",
-    text: "7"
-  },
-  {
-    id: "eight",
-    text: "8"
-  },
-  {
-    id: "nine",
-    text: "9"
-  },
-  {
-    id: "subtract",
-    text: "-"
-  },
-  {
-    id: "four",
-    text: "4"
-  },
-  {
-    id: "five",
-    text: "5"
-  },
-  {
-    id: "six",
-    text: "6"
-  },
-  {
-    id: "add",
-    text: "+"
-  },
-  {
-    id: "one",
-    text: "1"
-  },
-  {
-    id: "two",
-    text: "2"
-  },
-  {
-    id: "three",
-    text: "3"
-  },
-  {
-    id: "zero",
-    text: "0"
-  },
-  {
-    id: "decimal",
-    text: "."
-  },
-  {
-    id: "equal",
-    text: "="
-  }
-]
-
-function App() {
-  return (
-    
-    <Fragment>
-      <div id="calculator">
-        <div className="display">
-          <div className="formula-screen">12345</div>
-          <div className="output-screen">12345</div>
-        </div>
-        <div className="btns-container">
-          {calcBtns.map((btn) => (
-            <Buttons btn={btn} key={btn.id} id={btn.id} />
-          ))}
-        </div>
-      </div> 
-    </Fragment>
-  );
-}
-
-export default App;
-
-
-export function Buttons({btn}){
+export default function App() {
 
   return(
     <Fragment>
-        <button className="button" id={btn.id}>
-          {btn.text}
-        </button>
+      <div id="frame">
+        <div className="output-screen">
+          
+        </div>
+      </div>
     </Fragment>
   );
 }
