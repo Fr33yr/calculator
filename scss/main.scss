@@ -1,29 +1,40 @@
 @import './config';
 
+html{
+  background: $body-clr;
+  font-weight: 500;
+}
+
+#root{
+  background: $body-clr;
+}
 
 #frame{
   max-width: 220px;
   margin: 10vh auto 0 auto;
-  background: black;
+  background: $frame-clr;
+  border-radius: 3px;
 }
 
 .display{
+  padding: 0 .5em 0 .5em;
   display: flex;
   flex-direction: column;
+  height: fit-content;
   .history{
     border: none;
-    background-color: black;
+    background-color: $frame-clr;
     text-align: right;
     height: 21px;
-    font-size: 18px;
+    font-size: 1.1rem;
     color: wheat;
   }
   .current-calc{
     border: none;
-    background: black;
+    background: $frame-clr;
     text-align: right;
     height: 42px;
-    font-size: 30px;
+    font-size: 2.1rem;
     color: wheat;
     outline: none;
   }
@@ -34,11 +45,27 @@
   padding: .5em 0 .5em 0;
   max-width: 200px;
   display: block;
+  .digit-btn{
+    background: $digits-clr;
+    color: wheat;
+  }
+  .operation-btn{
+    background: $operations-clr;
+    color: $frame-clr;
+  }
 }
 
 button{
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid $frame-clr;
+  border-radius: 2px;
   height: 50px;
   width: 50px;
+}
+
+button:active{
+  opacity: 0.8;
 }
 
 .span-two{

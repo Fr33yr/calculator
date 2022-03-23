@@ -5,7 +5,7 @@ export function Digits({ dispatch, digit}){
 
     return(
         <Fragment>
-            <button onClick={()=> dispatch({ type: ACTIONS.ADD_DIGIT, payload: {digit}})}>{digit}</button>
+            <button className="digit-btn" onClick={()=> dispatch({ type: ACTIONS.ADD_DIGIT, payload: {digit}})}>{digit}</button>
         </Fragment>
     );
 }

@@ -117,7 +117,7 @@ function evaluate({ currentCalc, history, operation}){
     case "-":
       computation = prev - current
       break
-    case "*":
+    case "x":
       computation = prev * current
       break
     case "/":
@@ -141,13 +141,13 @@ export default function App(){
           <div className="current-calc">{currentCalc}</div>
         </div>
         <div className="buttons">
-          <button className="span-two" onClick={()=> dispatch({ type: ACTIONS.CLEAR })}>AC</button>
-          <button onClick={()=> dispatch({ type: ACTIONS.DELETE_DIGIT })}>DEL</button>
+          <button style={{background: "#9e9e9e"}} className="span-two" onClick={()=> dispatch({ type: ACTIONS.CLEAR })}>AC</button>
+          <button style={{background: "#9e9e9e"}} onClick={()=> dispatch({ type: ACTIONS.DELETE_DIGIT })}>DEL</button>
           <Operators operation={'/'} dispatch={dispatch}/>
           <Digits digit={"7"} dispatch={dispatch}/>
           <Digits digit={"8"} dispatch={dispatch}/>
           <Digits digit={"9"} dispatch={dispatch}/>
-          <Operators operation={'*'} dispatch={dispatch}/>
+          <Operators operation={'x'} dispatch={dispatch}/>
           <Digits digit={"4"} dispatch={dispatch}/>
           <Digits digit={"5"} dispatch={dispatch}/>
           <Digits digit={"6"} dispatch={dispatch}/>
@@ -158,7 +158,7 @@ export default function App(){
           <Operators operation={'+'} dispatch={dispatch}/>
           <Digits digit={"0"} dispatch={dispatch}/>
           <Digits digit={"."} dispatch={dispatch}/>
-          <button className="span-two" onClick={()=> dispatch({ type: ACTIONS.EVALUATE })}>=</button>
+          <button style={{background: "#e48900"}} className="span-two" onClick={()=> dispatch({ type: ACTIONS.EVALUATE })}>=</button>
         </div>
       </div>
     </Fragment>

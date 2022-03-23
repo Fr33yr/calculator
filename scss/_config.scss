@@ -6,10 +6,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #141125;
 }
   
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+//=== Variables ===
+
+$operations-clr: #e48900;
+$delete-clr: #9e9e9e;
+$digits-clr: #171717;
+$frame-clr: #000000;
+$body-clr: #0e0e0e;

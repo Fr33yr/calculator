@@ -6,7 +6,7 @@ export function Operators({ dispatch, operation}) {
 
     return(
         <Fragment>
-            <button onClick={()=> dispatch({ type: ACTIONS.CHOOSE_OPERATION, payload: {operation}})}>
+            <button className="operation-btn" onClick={()=> dispatch({ type: ACTIONS.CHOOSE_OPERATION, payload: {operation}})}>
                 {operation}
             </button>
         </Fragment>
