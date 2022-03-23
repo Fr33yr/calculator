@@ -1,11 +1,11 @@
 import React,{ Fragment } from "react";
+import { ACTIONS } from "../App";
 
-
-export function Digits(){
+export function Digits({ dispatch, digit}){
 
     return(
         <Fragment>
-            {null}
+            <button onClick={()=> dispatch({ type: ACTIONS.ADD_DIGIT, payload: {digit}})}>{digit}</button>
         </Fragment>
     );
 }
