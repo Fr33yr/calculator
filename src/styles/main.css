@@ -83,4 +83,14 @@ button:active {
 .span-two {
   height: 50px;
   width: 100px;
+}
+
+footer {
+  margin-top: 20vh;
+  text-align: center;
+}
+footer a {
+  color: wheat;
+  font-size: 2rem;
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */

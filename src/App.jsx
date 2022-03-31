@@ -161,6 +161,8 @@ export default function App(){
           <button style={{background: "#e48900"}} className="span-two" onClick={()=> dispatch({ type: ACTIONS.EVALUATE })}>=</button>
         </div>
       </div>
+
+      <footer><a href="https://github.com/Fr33yr/calculator" target={"_blank"} rel={"noreferrer react"}>Code</a></footer>
     </Fragment>
   );
 }
